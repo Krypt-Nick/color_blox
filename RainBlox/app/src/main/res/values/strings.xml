@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RainBlox</string>
+    <string name="login_start_new_game">Start New Game</string>
+    <string name="login_leader_boards">Leaderboards</string>
+    <string name="login_game_logo">Game Logo</string>
+    <string name="game_player_1_label">Player 1</string>
+    <string name="game_player_2_label">Player 2</string>
+    <string name="login_dialog_title_leaderboards">Leaderboards</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_join">Join</string>
+    <string name="dialog_hint_session_id">Session Id</string>
+    <string name="dialog_title_connect_to_session">Connect To Session</string>
+    <string name="dialog_error_not_null">Cannot be null!</string>
+    <string name="dialog_message_game_full">This game is full. Please choose a different session.</string>
+    <string name="dialog_title_info">Info</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_title_congrats">Congratulations</string>
+    <string name="dialog_button_restart">Restart</string>
+    <string name="dialog_button_menu">Menu</string>
+    <string name="dialog_message_player_one_winner">Player 1 Wins!</string>
+    <string name="dialog_message_player_two_winner">Player 2 Wins!</string>
+    <string name="dialog_message_game_not_found">Game not found!</string>
+    <string name="fragment_game_playing_as_warm">You Are Playing As Warm Colors!</string>
+    <string name="fragment_game_playing_as_cool">You Are Playing As Cool Colors!</string>
+    <string name="fragment_game_winner_found">WINNER FOUND!</string>
+</resources>
