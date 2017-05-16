@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_board_background"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/md_blue_200" />
+
+        <ImageButton
+            android:id="@+id/img_btn_6_center_right"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="@dimen/margin_game_board_box_spacing"
+            android:layout_marginTop="@dimen/margin_game_board_box_spacing"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_5_center_center"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/img_btn_6_center_right"
+            android:layout_margin="@dimen/margin_game_board_box_spacing"
+            android:background="@color/md_blue_grey_100"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_4_center_left"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin_game_board_box_spacing"
+            android:layout_marginTop="@dimen/margin_game_board_box_spacing"
+            android:layout_toStartOf="@id/img_btn_5_center_center"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_3_top_right"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_above="@id/img_btn_6_center_right"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_2_top_center"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_above="@id/img_btn_5_center_center"
+            android:layout_toStartOf="@id/img_btn_3_top_right"
+            android:layout_marginLeft="@dimen/margin_game_board_box_spacing"
+            android:layout_marginRight="@dimen/margin_game_board_box_spacing"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_1_top_left"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_above="@id/img_btn_4_center_left"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/img_btn_2_top_center"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_9_bottom_right"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_below="@id/img_btn_6_center_right"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_8_bottom_center"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_below="@id/img_btn_5_center_center"
+            android:layout_toStartOf="@id/img_btn_9_bottom_right"
+            android:layout_marginLeft="@dimen/margin_game_board_box_spacing"
+            android:layout_marginRight="@dimen/margin_game_board_box_spacing"
+            android:background="@color/md_blue_grey_100" />
+
+        <ImageButton
+            android:id="@+id/img_btn_7_bottom_left"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/width_game_board_boxes"
+            android:layout_height="@dimen/height_game_board_boxes"
+            android:layout_below="@id/img_btn_4_center_left"
+            android:layout_centerHorizontal="true"
+            android:layout_toStartOf="@id/img_btn_8_bottom_center"
+            android:background="@color/md_blue_grey_100" />
+
+
+        <View
+            android:id="@+id/view_win_line_right_diagonal"
+            android:layout_width="25dp"
+            android:layout_height="450dp"
+            android:layout_toStartOf="@id/img_btn_6_center_right"
+            android:layout_toEndOf="@id/img_btn_4_center_left"
+            android:layout_marginStart="62.5dp"
+            android:layout_marginEnd="62.5dp"
+            android:layout_centerVertical="true"
+            android:rotation="45"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_left_diagonal"
+            android:layout_width="25dp"
+            android:layout_height="450dp"
+            android:layout_toStartOf="@id/img_btn_6_center_right"
+            android:layout_toEndOf="@id/img_btn_4_center_left"
+            android:layout_marginStart="62.5dp"
+            android:layout_marginEnd="62.5dp"
+            android:layout_centerVertical="true"
+            android:rotation="-45"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_top_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="@dimen/margin_win_line_offset"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_above="@id/img_btn_5_center_center"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_bottom_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/margin_win_line_offset"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_below="@id/img_btn_5_center_center"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="350dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/img_btn_6_center_right"
+            android:layout_toEndOf="@id/img_btn_4_center_left"
+            android:layout_marginStart="62.5dp"
+            android:layout_marginEnd="62.5dp"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_left_vertical"
+            android:layout_width="25dp"
+            android:layout_height="350dp"
+            android:layout_marginEnd="@dimen/margin_win_line_offset"
+            android:layout_toStartOf="@id/img_btn_5_center_center"
+            android:layout_centerVertical="true"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_win_line_right_vertical"
+            android:layout_width="25dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="@dimen/margin_win_line_offset"
+            android:layout_toEndOf="@id/img_btn_5_center_center"
+            android:layout_centerVertical="true"
+            android:background="@color/md_green_500"
+            android:alpha=".5"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/lbl_player_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="125dp"
+            android:gravity="center"
+            android:text="@string/game_player_1_label"
+            android:textSize="24sp"
+            android:textColor="@color/md_white_1000"/>
+
+        <ImageView
+            android:id="@+id/img_turn_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/lbl_player_1"
+            android:rotation="180"
+            android:src="@drawable/vector_arrow"
+            android:tint="@color/md_white_1000"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/lbl_player_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_turn_arrow"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/game_player_2_label"
+            android:textSize="24sp"
+            android:textColor="@color/md_white_1000"/>
+
+        <include
+            android:id="@+id/include_color_key"
+            layout="@layout/layout_color_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_turn_arrow"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp" />
+    </RelativeLayout>
+</layout>

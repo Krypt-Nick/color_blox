@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_blue_300">
+
+        <FrameLayout
+            android:id="@+id/frame_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_login_button"
+            android:layout_alignParentBottom="true"
+            android:background="@color/md_green_300"
+            android:text="@string/login_start_new_game"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/size_login_button_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_leader_boards"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_login_button"
+            android:layout_above="@id/btn_start_game"
+            android:background="@color/md_orange_300"
+            android:text="@string/login_leader_boards"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/size_login_button_text"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:background="@color/md_deep_purple_300"
+            android:contentDescription="@string/login_game_logo"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/lbl_logo_text"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Color \nBlocks"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/logo_text_size"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</layout>
